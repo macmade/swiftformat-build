@@ -40,4 +40,5 @@ install:
 	
 	@echo "*** Installing SwiftFormat"
 	@cp build/Build/Products/Release/swiftformat dist/
+	@codesign --sign "Developer ID Application: Jean-David Gadina (326Y53CJMD)" --options runtime dist/swiftformat
 
